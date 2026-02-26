@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expaura | Training Infrastructure Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f8fafc;
+  color:#1e293b;
+  line-height:1.6;
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+section{
+  padding:110px 0;
+}
+
+h1,h2,h3{
+  font-weight:600;
+}
+
+h2{
+  text-align:center;
+  font-size:2.4rem;
+  margin-bottom:50px;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  background:rgba(15,23,42,0.95);
+  backdrop-filter:blur(8px);
+  padding:18px 0;
+  z-index:1000;
+}
+
+.nav-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h3{
+  color:white;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  font-size:0.95rem;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+  color:white;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  padding-top:80px;
+}
+
+.hero h1{
+  font-size:3.2rem;
+  margin-bottom:25px;
+}
+
+.hero p{
+  font-size:1.15rem;
+  max-width:750px;
+  margin:0 auto 35px;
+  opacity:0.9;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:#2563eb;
+  color:white;
+  border-radius:40px;
+  font-weight:600;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+
+.btn:hover{
+  background:#1d4ed8;
+  transform:translateY(-2px);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  padding:40px 30px;
+  border-radius:18px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.06);
+  transition:all 0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card h3{
+  margin-bottom:15px;
+}
+
+/* DARK SECTION */
+.dark{
+  background:#0f172a;
+  color:white;
+}
+
+.dark .card{
+  background:#1e293b;
+  box-shadow:none;
+}
+
+/* FOUNDER */
+.founder{
+  text-align:center;
+}
+
+.founder h3{
+  font-size:1.8rem;
+  margin-bottom:15px;
+}
+
+.founder p{
+  max-width:750px;
+  margin:auto;
+  opacity:0.9;
+}
+
+/* SUPPORT SECTION */
+.support{
+  text-align:center;
+  background:#f1f5f9;
+}
+
+.support p{
+  max-width:750px;
+  margin:20px auto 0;
+}
+
+/* FOOTER */
+footer{
+  background:#111827;
+  color:#9ca3af;
+  text-align:center;
+  padding:35px 0;
+  font-size:0.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{font-size:2.3rem;}
+  nav ul{display:none;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-content">
+    <h3>Expaura</h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#ecosystem">Engagement</a></li>
+      <li><a href="#founder">Founder</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Digital Infrastructure for Modern Training Ecosystems</h1>
+    <p>
+      Expaura operates within the fitness and wellness sector, 
+      providing B2B digital infrastructure for academies while 
+      enabling direct learning access for students.
+      We are actively developing proprietary products under intellectual property frameworks.
+    </p>
+    <a href="#ecosystem" class="btn">Connect With Us</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>What We Do</h2>
+    <div class="grid">
+      <div class="card">
+        Provide structured digital solutions for training academies.
+      </div>
+      <div class="card">
+        Enable scalable engagement models between institutions and learners.
+      </div>
+      <div class="card">
+        Operate at the intersection of training, fitness, and wellness infrastructure.
+      </div>
+      <div class="card">
+        Develop proprietary products aligned with long-term intellectual property strategies.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENT -->
+<section id="ecosystem" class="dark">
+  <div class="container">
+    <h2>Engagement Model</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Academies</h3>
+        Collaborate with us to enhance digital and operational capabilities.
+      </div>
+      <div class="card">
+        <h3>Students</h3>
+        Access structured learning pathways through our platform.
+      </div>
+      <div class="card">
+        <h3>Investors & Strategic Partners</h3>
+        Connect to support scalable ecosystem development.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+  <div class="container founder">
+    <h2>Founder</h2>
+    <h3>Dinipth S Damodhar</h3>
+    <p>
+      Martial Arts Practitioner | Kerala State Level Player |
+      Teaching Experience in India & UAE |
+      Karate 2nd Dan Black Belt.
+      <br><br>
+      Founded with the vision of strengthening fitness and training ecosystems 
+      through structured, scalable digital infrastructure.
+    </p>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section id="support" class="support">
+  <div class="container">
+    <h2>Supported By</h2>
+    <p>
+      Backed and supported by active participation within technology and innovation communities.
+      Engaging with developer networks and ecosystem contributors 
+      to strengthen technical foundations and collaborative growth.
+    </p>
+  </div>
+</section>
+
+
+
+<section id="contact" style="background:#f8fafc; padding:100px 0;">
+  <div class="container" style="text-align:center;">
+    <h2>Contact</h2>
+    <p style="margin-bottom:20px; max-width:700px; margin-left:auto; margin-right:auto;">
+      For academy partnerships, student enrollment inquiries, 
+      or strategic collaboration discussions, feel free to connect directly.
+    </p>
+
+    <div style="font-size:1.2rem; font-weight:600; margin-top:20px;">
+      📞 +91 7594808803
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Expaura. All Rights Reserved.
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener("click",function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({behavior:"smooth"});
+  });
+});
+</script>
+
+</body>
+</html>
